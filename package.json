@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-minxing",
+  "version": "0.0.1",
+  "main": "eslint-config-bestpractice",
+  "author": "stuart_zhang",
+  "repository": {
+    "type": "git",
+    "url": "https://git.dehuinet.com/zhanghy/eslint-config-minxing.git"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  }
+}
