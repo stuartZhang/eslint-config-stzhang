@@ -24,12 +24,12 @@ module.exports = {
     }],
     'id-blacklist': 'off',
     'id-length': 'off',
-    'indent': ['error', 2, {
+    'indent': ['error', 4, {
       'SwitchCase': 0,
       'VariableDeclarator': {
-        'var': 2,
-        'let': 2,
-        'const': 3
+        'var': 1,
+        'let': 1,
+        'const': 1.5
       }
     }],
     'key-spacing': ['error', {
