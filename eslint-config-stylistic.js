@@ -29,7 +29,7 @@ module.exports = {
       'VariableDeclarator': {
         'var': 1,
         'let': 1,
-        'const': 1.5
+        'const': 1
       }
     }],
     'key-spacing': ['error', {
