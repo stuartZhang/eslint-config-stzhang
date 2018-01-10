@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-minxing",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "repository": {
     "type": "git",
-    "url": "https://git.dehuinet.com/zhanghy/eslint-config-minxing.git"
+    "url": "https://github.com/stuartZhang/eslint-config-minxing.git"
   },
   "devDependencies": {
     "eslint": "^4.12.1"
