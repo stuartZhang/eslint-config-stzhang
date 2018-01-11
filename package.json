@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "repository": {
@@ -11,6 +11,6 @@
     "eslint": "^4.12.1"
   },
   "engines": {
-    "node": ">=6.10"
+    "node": ">=6.0"
   }
 }
