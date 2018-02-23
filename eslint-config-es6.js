@@ -54,7 +54,7 @@ module.exports = {
     'minxing/arrow-parens': ['error', 'as-needed'],
     'minxing/generator-star-spacing': ['error', 'before'],
     'minxing/require-yield': ['error'],
-    'minxing/no-console': ['error', {
+    'minxing/no-console': [process.env.NODE_ENV === 'production' ? 'error' : 'warn', {
       'allow': ['assert']
     }]
   }
