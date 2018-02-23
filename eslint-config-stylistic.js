@@ -1,4 +1,5 @@
 'use strict';
+const {lineIndent} = require('./utils');
 // Stylistic Issues
 module.exports = {
   'rules': {
@@ -24,7 +25,7 @@ module.exports = {
     }],
     'id-blacklist': 'off',
     'id-length': 'off',
-    'indent': ['error', 4, {
+    'indent': ['error', lineIndent, {
       'SwitchCase': 0,
       'VariableDeclarator': {
         'var': 1,

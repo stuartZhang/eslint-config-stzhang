@@ -1,4 +1,5 @@
 'use strict';
+const {lineIndent} = require('./utils');
 // Variables
 module.exports = {
   'parser': 'vue-eslint-parser',
@@ -21,6 +22,7 @@ module.exports = {
   },
   'rules': {
     'vue/max-attributes-per-line': ['error', {'singleline': 10, 'multiline': 5}],
+    'vue/html-indent': ["error", lineIndent],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'ignorePackages': true,
