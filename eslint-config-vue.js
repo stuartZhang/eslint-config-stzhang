@@ -9,9 +9,10 @@ module.exports = {
     'browser': true,
     'es6': true,
   },
-  'plugin': ['html', 'import', 'vue'],
+  // ignore the plugin 'html', due to https://github.com/BenoitZugmeyer/eslint-plugin-html/issues/60
+  'plugins': ['import', 'vue'],
   'settings': {
-    'html/html-extensions': ['.vue', '.html'],
+    // 'html/html-extensions': ['.vue', '.html'],
     'import/resolver': {
       'webpack': {
         'config': 'build/webpack.base.conf.js'
@@ -22,8 +23,11 @@ module.exports = {
     'vue/max-attributes-per-line': ['error', {'singleline': 10, 'multiline': 5}],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
-      'js': 'never',
-      'vue': 'never'
+      'ignorePackages': true,
+      'pattern': {
+          'js': 'never',
+          'vue': 'never'
+      }
     }],
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
