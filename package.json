@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "repository": {
@@ -14,6 +14,7 @@
     "node": ">=6.0"
   },
   "dependencies": {
+    "eslint-config-import": "^0.13.0",
     "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-vue": "^4.2.2",
