@@ -2,6 +2,16 @@
 const {lineIndent} = require('./utils');
 // Variables
 module.exports = {
+  'parserOptions': {
+    'ecmaVersion': 8,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'globalReturn': true,
+      'impliedStrict': false,
+      'jsx': false,
+      'experimentalObjectRestSpread': false
+    }
+  },
   'parser': 'vue-eslint-parser',
   'extends': [
     'plugin:vue/strongly-recommended'
