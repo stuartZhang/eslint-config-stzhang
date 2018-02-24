@@ -34,11 +34,12 @@ module.exports = {
     'vue/max-attributes-per-line': ['error', {'singleline': 10, 'multiline': 5}],
     'vue/html-indent': ["error", lineIndent],
     // don't require .vue extension when importing
-    'import/extensions': ['error', 'always', {
+    'import/extensions': ['error', {
       'ignorePackages': true,
       'pattern': {
-          'js': 'never',
-          'vue': 'never'
+          '.js': 'never',
+          '.vue': 'never',
+          '.*': 'always'
       }
     }],
     // disallow reassignment of function parameters
