@@ -32,6 +32,7 @@ module.exports = {
   },
   'rules': {
     'vue/max-attributes-per-line': ['error', {'singleline': 10, 'multiline': {'max': 5, 'allowFirstLine': true}}],
+    'vue/mustache-interpolation-spacing': ['error', 'never'],
     'vue/html-indent': ["error", lineIndent],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
