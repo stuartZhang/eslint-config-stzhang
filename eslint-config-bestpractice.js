@@ -79,6 +79,7 @@ module.exports = {
     'wrap-iife': ['error', 'inside'],
     'yoda': ['error', 'never', {
       'exceptRange': true
-    }]
+    }],
+    'no-param-reassign': 'off'
   }
 };
