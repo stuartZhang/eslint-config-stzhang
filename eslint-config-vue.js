@@ -3,7 +3,7 @@ const {lineIndent} = require('./utils');
 // Variables
 module.exports = {
   'parserOptions': {
-    'ecmaVersion': 8,
+    'ecmaVersion': 9,
     'sourceType': 'module',
     'ecmaFeatures': {
       'globalReturn': true,
