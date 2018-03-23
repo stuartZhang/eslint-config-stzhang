@@ -3,13 +3,15 @@ const {lineIndent} = require('./utils');
 // Variables
 module.exports = {
   'parserOptions': {
+    'parser': "babel-eslint",
     'ecmaVersion': 9,
     'sourceType': 'module',
     'ecmaFeatures': {
       'globalReturn': true,
       'impliedStrict': false,
       'jsx': false,
-      'experimentalObjectRestSpread': false
+      'experimentalObjectRestSpread': false,
+      'allowImportExportEverywhere': false
     }
   },
   'parser': 'vue-eslint-parser',
