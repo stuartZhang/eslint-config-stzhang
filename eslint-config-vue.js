@@ -9,7 +9,7 @@ module.exports = {
     'ecmaFeatures': {
       'globalReturn': true,
       'impliedStrict': false,
-      'jsx': false,
+      'jsx': true,
       'experimentalObjectRestSpread': false,
       'allowImportExportEverywhere': false
     }
