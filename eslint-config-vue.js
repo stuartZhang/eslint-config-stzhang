@@ -33,6 +33,12 @@ module.exports = {
   'settings': {
     // 'html/html-extensions': ['.vue', '.html'],
     'import/resolver': {
+       "node": {
+        "extensions": [
+            ".js",
+            ".vue"
+        ]
+      },
       'webpack': {
         'config': 'build/webpack.dev.conf.js'
       }
