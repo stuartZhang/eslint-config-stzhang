@@ -15,20 +15,26 @@ module.exports = {
     }
   },
   'parser': 'vue-eslint-parser',
+  'globals': {
+    'process': false,
+    'require': false
+  },
   'extends': [
-    'plugin:vue/strongly-recommended'
+    'plugin:vue/strongly-recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings'
   ],
   'env': {
     'browser': true,
     'es6': true,
   },
   // ignore the plugin 'html', due to https://github.com/BenoitZugmeyer/eslint-plugin-html/issues/60
-  'plugins': ['import', 'vue'],
+  'plugins': ['vue'],
   'settings': {
     // 'html/html-extensions': ['.vue', '.html'],
     'import/resolver': {
       'webpack': {
-        'config': 'build/webpack.base.conf.js'
+        'config': 'build/webpack.dev.conf.js'
       }
     }
   },
