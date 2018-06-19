@@ -45,9 +45,16 @@ module.exports = {
     }
   },
   'rules': {
-    'vue/max-attributes-per-line': ['error', {'singleline': 10, 'multiline': {'max': 5, 'allowFirstLine': true}}],
-    'vue/mustache-interpolation-spacing': ['error', 'never'],
     'vue/html-indent': ["error", lineIndent],
+    'vue/max-attributes-per-line': ['error', {
+      'singleline': 10,
+      'multiline': {
+        'max': 5,
+        'allowFirstLine': true
+      }
+    }],
+    'vue/mustache-interpolation-spacing': ['error', 'never'],
+    "vue/name-property-casing": ['error', 'kebab-case'],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'ignorePackages': true,
