@@ -54,7 +54,7 @@ module.exports = {
       }
     }],
     'vue/mustache-interpolation-spacing': ['error', 'never'],
-    "vue/name-property-casing": ['error', 'kebab-case'],
+    "vue/name-property-casing": ['error', 'PascalCase'],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'ignorePackages': true,

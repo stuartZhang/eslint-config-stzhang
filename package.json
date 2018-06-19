@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "repository": {
