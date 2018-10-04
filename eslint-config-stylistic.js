@@ -75,11 +75,7 @@ module.exports = {
       'before': false,
       'after': true
     }],
-    'sort-imports': ['warn', {
-      'ignoreCase': true,
-      'ignoreMemberSort': false,
-      'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']
-    }],
+    'sort-imports': 'off',
     'sort-vars': ['warn', {
       'ignoreCase': true
     }],
