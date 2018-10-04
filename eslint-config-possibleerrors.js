@@ -1,10 +1,8 @@
 // Possible Errors
+const {noConsole, noDebugger} = require('./utils');
 module.exports = {
   'rules': {
-    'no-console': [process.env.NODE_ENV === 'production' ? 'error' : 'warn', {
-      'allow': ['assert', 'error', 'time', 'timeEnd']
-    }],
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn'
+    'no-console': noConsole.value,
+    'no-debugger': noDebugger.value // allow debugger during development
   }
 };
