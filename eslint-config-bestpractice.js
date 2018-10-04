@@ -8,7 +8,7 @@ module.exports = {
     }],
     'block-scoped-var': ['warn'],
     'complexity': ['warn', {
-      'maximum': 20
+      'maximum': 25
     }],
     'curly': ['warn', 'all'],
     'array-callback-return': ['error'],
@@ -75,11 +75,31 @@ module.exports = {
     }],
     'no-with': ['error'],
     'radix': ['error', 'as-needed'],
-    'vars-on-top': 'off',
+    'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
     'yoda': ['error', 'never', {
       'exceptRange': true
     }],
-    'no-param-reassign': 'off'
+    'no-param-reassign': ['error', {
+      'props': true,
+      'ignorePropertyModificationsFor': [
+        'state', // for vuex state
+        'acc', // for reduce accumulators
+        'e' // for e.returnvalue
+      ]
+    }],
+    'class-methods-use-this': 'error',
+    'max-classes-per-file': 'warn',
+    'no-octal-escape': 'error',
+    'no-restricted-properties': 'off',
+    'no-return-assign': 'error',
+    'no-return-await': 'error',
+    'no-sequences': 'error',
+    'no-useless-return': 'error',
+    'prefer-promise-reject-errors': ['error', {
+      'allowEmptyReject': true
+    }],
+    'require-await': 'error',
+    'require-unicode-regexp': 'error'
   }
 };

@@ -8,8 +8,8 @@ module.exports = {
     'no-restricted-globals': 'off',
     'no-shadow': 'off',
     'no-shadow-restricted-names': 'off',
-    'no-undef-init': 'off',
-    'no-undefined': 'off',
-    'no-use-before-define': 'off'
+    'no-undef-init': 'error',
+    'no-undefined': 'error',
+    'no-use-before-define': 'error'
   }
 };

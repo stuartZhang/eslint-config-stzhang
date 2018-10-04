@@ -100,7 +100,78 @@ module.exports = {
     'spaced-comment': ['error', 'always', {
       'exceptions': ['!', '*'],
       'markers': ['TODO:', 'FIXME', 'XXX']
-    }]
+    }],
+    'array-bracket-newline': ['error', 'consistent'],
+    'array-element-newline': ['error', 'consistent'],
+    'capitalized-comments': 'warn',
+    'comma-dangle': ['error', 'never'],
+    'func-call-spacing': ['error', 'never'],
+    'func-name-matching': ['error', 'always', {
+      'considerPropertyDescriptor': true
+    }],
+    'function-paren-newline': ['error', 'consistent'],
+    'id-match': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'jsx-quotes': ['error', 'prefer-double'],
+    'line-comment-position': ['error', {
+      'position': 'beside'
+    }],
+    'linebreak-style': ['error', 'unix'],
+    'lines-around-comment': 'off',
+    'lines-between-class-members': ['error', 'never'],
+    'max-depth': ['warn', 6],
+    'max-len': 'off',
+    'max-lines': ['warn', 600],
+    'max-lines-per-function': ['warn', {
+      'max': 100,
+      'skipBlankLines': true,
+      'skipComments': true,
+      'IIFEs': false
+    }],
+    'max-nested-callbacks': ['warn', 10],
+    'max-params': 'off',
+    'max-statements': 'off',
+    'max-statements-per-line': ['warn', {
+      'max': 1
+    }],
+    'multiline-comment-style': ['warn', 'starred-block'],
+    'multiline-ternary': ['warn', 'always-multiline'],
+    'newline-per-chained-call': 'off',
+    'no-bitwise': 'off',
+    'no-continue': 'off',
+    'no-inline-comments': 'off',
+    'no-mixed-operators': 'off',
+    'no-multi-assign': 'off',
+    'no-plusplus': 'off',
+    'no-tabs': 'error',
+    'no-ternary': 'off',
+    'no-underscore-dangle': 'off',
+    'nonblock-statement-body-position': ['error', 'below'],
+    'object-curly-newline': ['warn', {
+      'consistent': true
+    }],
+    'object-property-newline': ['warn', {
+      'allowAllPropertiesOnSameLine': true
+    }],
+    'one-var': ['warn', {
+      'initialized': 'never',
+      'uninitialized': 'consecutive'
+    }],
+    'one-var-declaration-per-line': 'initializations',
+    'operator-assignment': 'off',
+    'operator-linebreak': 'off',
+    'padded-blocks': ['warn', 'never'],
+    'padding-line-between-statements': 'off',
+    'prefer-object-spread': 'error',
+    'require-jsdoc': 'off',
+    'semi-style': ['error', 'last'],
+    'sort-keys': 'off',
+    'switch-colon-spacing': ['warn', {
+      'after': true,
+      'before': false
+    }],
+    'template-tag-spacing': ['error', 'never'],
+    'unicode-bom': ['error', 'never'],
+    'wrap-regex': 'off'
   }
-
 };

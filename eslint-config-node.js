@@ -19,8 +19,9 @@ module.exports = {
     'no-new-require': 'error',
     'no-path-concat': 'off',
     'no-process-env': 'off',
-    'no-process-exit': 'error',
+    'no-process-exit': 'warn',
     'no-restricted-modules': 'off',
-    'no-sync': 'error'
+    'no-sync': 'error',
+    'no-buffer-constructor': 'error'
   }
 };

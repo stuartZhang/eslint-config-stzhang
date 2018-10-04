@@ -57,6 +57,16 @@ module.exports = {
     'minxing/require-yield': ['error'],
     'minxing/no-console': noConsole.value,
     'no-duplicate-imports': ['error'],
-    'no-useless-rename': ['error']
+    'no-useless-rename': ['error'],
+    'no-useless-computed-key': 'error',
+    'prefer-destructuring': ['error', {
+      'array': true,
+      'object': true
+    }, {
+      'enforceForRenamedProperties': true
+    }],
+    'prefer-numeric-literals': 'error',
+    'rest-spread-spacing': ['error', 'never'],
+    'symbol-description': 'error'
   }
 };
