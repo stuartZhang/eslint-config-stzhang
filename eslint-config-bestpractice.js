@@ -18,7 +18,7 @@ module.exports = {
     'dot-notation': ['error'],
     'eqeqeq': ['error', 'smart'],
     'guard-for-in': ['error'],
-    'no-alert': ['error'],
+    'no-alert': ['off'],
     'no-caller': ['error'],
     // 'no-case-declarations': ['error'],
     'no-div-regex': ['warn'],
