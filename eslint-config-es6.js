@@ -64,10 +64,10 @@ module.exports = {
     'no-useless-rename': ['error'],
     'no-useless-computed-key': 'error',
     'prefer-destructuring': ['error', {
-      array: false,
+      array: true,
       object: true
     }, {
-      enforceForRenamedProperties: true
+      enforceForRenamedProperties: false
     }],
     'prefer-numeric-literals': 'error',
     'rest-spread-spacing': ['error', 'never'],
