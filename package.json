@@ -3,7 +3,7 @@
   "version": "0.0.35",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/stuartZhang/eslint-config-minxing.git"
