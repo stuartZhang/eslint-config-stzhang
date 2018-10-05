@@ -2,27 +2,31 @@
 // ECMAScript 6
 const {noConsole} = require('./utils');
 module.exports = {
-  'plugins': ['minxing'],
-  'rules': {
+  plugins: ['minxing'],
+  rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['off'],
     'arrow-spacing': ['error', {
-      'before': true,
-      'after': true
+      before: true,
+      after: true
     }],
     // 'constructor-super': ['error'],
     'generator-star-spacing': ['off'],
     // 'no-class-assign': ['error'],
     'no-confusing-arrow': ['error', {
-      'allowParens': false
+      allowParens: false
     }],
-    // 'no-const-assign': ['error'],
-    // 'no-dupe-class-members': ['error'],
-    // 'no-new-symbol': ['error'],
-    // specify imports that you don’t want to use in your application.
+    /*
+     * 'no-const-assign': ['error'],
+     * 'no-dupe-class-members': ['error'],
+     * 'no-new-symbol': ['error'],
+     * specify imports that you don’t want to use in your application.
+     */
     'no-restricted-imports': 'off',
-    // 'no-this-before-super': ['error'],
-    // flags class constructors that can be safely removed without changing how the class works.
+    /*
+     * 'no-this-before-super': ['error'],
+     * flags class constructors that can be safely removed without changing how the class works.
+     */
     'no-useless-constructor': ['error'],
     // discouraging the use of var and encouraging the use of const or let instead. ecmaFeatures.blockBindings = true
     'no-var': ['error'],
@@ -32,7 +36,7 @@ module.exports = {
     'prefer-arrow-callback': ['error'],
     // flag variables that are declared using let keyword, but never reassigned after the initial assignment.
     'prefer-const': ['error', {
-      'destructuring': 'all'
+      destructuring: 'all'
     }],
     // flag usage of any older method, suggesting to instead use the newer Reflect version.
     'prefer-reflect': ['error'],
@@ -60,10 +64,10 @@ module.exports = {
     'no-useless-rename': ['error'],
     'no-useless-computed-key': 'error',
     'prefer-destructuring': ['error', {
-      'array': true,
-      'object': true
+      array: false,
+      object: true
     }, {
-      'enforceForRenamedProperties': true
+      enforceForRenamedProperties: true
     }],
     'prefer-numeric-literals': 'error',
     'rest-spread-spacing': ['error', 'never'],

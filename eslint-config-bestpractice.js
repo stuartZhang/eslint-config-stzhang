@@ -1,14 +1,14 @@
 'use strict';
 // Best Practices
 module.exports = {
-  'rules': {
+  rules: {
     'accessor-pairs': ['warn', {
-      'setWithoutGet': true,
-      'getWithoutSet': false
+      setWithoutGet: true,
+      getWithoutSet: false
     }],
     'block-scoped-var': ['warn'],
     'complexity': ['warn', {
-      'maximum': 25
+      maximum: 25
     }],
     'curly': ['warn', 'all'],
     'array-callback-return': ['error'],
@@ -24,12 +24,12 @@ module.exports = {
     'no-div-regex': ['warn'],
     'no-else-return': ['error'],
     'no-empty-function': ['error', {
-      'allow': ['constructors']
+      allow: ['constructors']
     }],
     // 'no-empty-pattern': ['error'],
     'no-eq-null': 'off',
     'no-eval': ['error', {
-      'allowIndirect': true
+      allowIndirect: true
     }],
     'no-extend-native': 'off',
     'no-extra-bind': ['error'],
@@ -54,7 +54,7 @@ module.exports = {
     // 'no-octal': ['error'],
     'no-proto': ['error'],
     'no-redeclare': ['error', {
-      'builtinGlobals': true
+      builtinGlobals: true
     }],
     'no-script-url': ['error'],
     // 'no-self-assign': ['error'],
@@ -62,27 +62,27 @@ module.exports = {
     'no-throw-literal': ['error'],
     'no-unmodified-loop-condition': ['error'],
     'no-unused-expressions': ['error', {
-      'allowShortCircuit': true,
-      'allowTernary': false
+      allowShortCircuit: true,
+      allowTernary: false
     }],
     // 'no-unused-labels': ['error'],
     'no-useless-call': ['error'],
     'no-useless-concat': ['error'],
     'no-void': ['error'],
     'no-warning-comments': ['warn', {
-      'terms': ['todo', 'fixme', 'xxx'],
-      'location': 'anywhere'
+      terms: ['todo', 'fixme', 'xxx'],
+      location: 'anywhere'
     }],
     'no-with': ['error'],
     'radix': ['error', 'as-needed'],
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
     'yoda': ['error', 'never', {
-      'exceptRange': true
+      exceptRange: true
     }],
     'no-param-reassign': ['error', {
-      'props': true,
-      'ignorePropertyModificationsFor': [
+      props: true,
+      ignorePropertyModificationsFor: [
         'state', // for vuex state
         'acc', // for reduce accumulators
         'e' // for e.returnvalue
@@ -97,7 +97,7 @@ module.exports = {
     'no-sequences': 'error',
     'no-useless-return': 'error',
     'prefer-promise-reject-errors': ['error', {
-      'allowEmptyReject': true
+      allowEmptyReject: true
     }],
     'require-await': 'error',
     'require-unicode-regexp': 'error'

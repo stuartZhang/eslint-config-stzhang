@@ -2,72 +2,74 @@
 const {lineIndent} = require('./utils');
 // Variables
 module.exports = {
-  'parserOptions': {
-    'parser': "babel-eslint",
-    'ecmaVersion': 9,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      'globalReturn': true,
-      'impliedStrict': false,
-      'jsx': true,
-      'experimentalObjectRestSpread': false,
-      'allowImportExportEverywhere': false
+  parserOptions: {
+    parser: 'babel-eslint',
+    ecmaVersion: 9,
+    sourceType: 'module',
+    ecmaFeatures: {
+      globalReturn: true,
+      impliedStrict: false,
+      jsx: true,
+      experimentalObjectRestSpread: false,
+      allowImportExportEverywhere: false
     }
   },
-  'parser': 'vue-eslint-parser',
-  'globals': {
-    'process': false,
-    'require': false
+  parser: 'vue-eslint-parser',
+  globals: {
+    process: false,
+    require: false
   },
-  'extends': [
+  extends: [
     'plugin:vue/strongly-recommended',
     'plugin:import/errors',
     'plugin:import/warnings'
   ],
-  'env': {
-    'browser': true,
-    'es6': true,
+  env: {
+    browser: true,
+    es6: true
   },
   // ignore the plugin 'html', due to https://github.com/BenoitZugmeyer/eslint-plugin-html/issues/60
-  'plugins': ['vue'],
-  'settings': {
+  plugins: ['vue'],
+  settings: {
     // 'html/html-extensions': ['.vue', '.html'],
     'import/resolver': {
-       "node": {
-        "extensions": [
-            ".js",
-            ".vue"
+      node: {
+        extensions: [
+          '.js',
+          '.vue'
         ]
       },
-      'webpack': {
-        'config': 'build/webpack.dev.conf.js'
+      webpack: {
+        config: 'build/webpack.dev.conf.js'
       }
     }
   },
-  'rules': {
-    'vue/html-indent': ["error", lineIndent],
+  rules: {
+    'vue/html-indent': ['error', lineIndent],
     'vue/max-attributes-per-line': ['error', {
-      'singleline': 10,
-      'multiline': {
-        'max': 5,
-        'allowFirstLine': true
+      singleline: 10,
+      multiline: {
+        max: 5,
+        allowFirstLine: true
       }
     }],
     'vue/mustache-interpolation-spacing': ['error', 'never'],
-    "vue/name-property-casing": ['error', 'PascalCase'],
+    'vue/name-property-casing': ['error', 'PascalCase'],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
-      'ignorePackages': true,
-      'pattern': {
-        'js': 'never',
-        'vue': 'never'
+      ignorePackages: true,
+      pattern: {
+        js: 'never',
+        vue: 'never'
       }
     }],
-    // disallow reassignment of function parameters
-    // disallow parameter object manipulation except for specific exclusions
-    // allow optionalDependencies
+    /*
+     * disallow reassignment of function parameters
+     * disallow parameter object manipulation except for specific exclusions
+     * allow optionalDependencies
+     */
     'import/no-extraneous-dependencies': ['error', {
-      'optionalDependencies': ['test/unit/index.js']
+      optionalDependencies: ['test/unit/index.js']
     }]
   }
 };

@@ -1,7 +1,7 @@
 // Possible Errors
 const {noConsole, noDebugger} = require('./utils');
 module.exports = {
-  'rules': {
+  rules: {
     'no-async-promise-executor': 'warn',
     'no-misleading-character-class': 'error',
     'no-template-curly-in-string': 'error',

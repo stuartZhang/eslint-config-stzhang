@@ -2,7 +2,7 @@ module.exports = {
   lineIndent: 4,
   noConsole: {
     prod: ['warn', {
-      'allow': ['assert', 'error', 'time', 'timeEnd']
+      allow: ['assert', 'error', 'time', 'timeEnd']
     }],
     dev: ['off'],
     get value(){

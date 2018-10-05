@@ -1,18 +1,18 @@
 'use strict';
 // Facebook Flow
 module.exports = {
-  'extends': [
+  extends: [
     'plugin:flowtype/recommended'
   ],
-  'plugins': [
+  plugins: [
     'flowtype'
   ],
-  'settings': {
-    'flowtype': { // flow.js 规则仅应用于 // @flow 文件。
-      'onlyFilesWithFlowAnnotation': true
+  settings: {
+    flowtype: { // flow.js 规则仅应用于 // @flow 文件。
+      onlyFilesWithFlowAnnotation: true
     }
   },
-  'rules': {
+  rules: {
     'flowtype/union-intersection-spacing': ['error', 'never']
   }
 };

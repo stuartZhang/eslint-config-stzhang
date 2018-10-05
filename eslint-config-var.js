@@ -1,7 +1,7 @@
 'use strict';
 // Variables
 module.exports = {
-  'rules': {
+  rules: {
     'init-declarations': 'off',
     'no-catch-shadow': 'warn',
     'no-label-var': 'error',
@@ -9,7 +9,7 @@ module.exports = {
     'no-shadow': 'off',
     'no-shadow-restricted-names': 'off',
     'no-undef-init': 'error',
-    'no-undefined': 'error',
+    'no-undefined': 'off',
     'no-use-before-define': 'off'
   }
 };
