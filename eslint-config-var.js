@@ -10,6 +10,6 @@ module.exports = {
     'no-shadow-restricted-names': 'off',
     'no-undef-init': 'error',
     'no-undefined': 'error',
-    'no-use-before-define': 'error'
+    'no-use-before-define': 'off'
   }
 };

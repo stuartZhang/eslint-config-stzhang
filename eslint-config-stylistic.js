@@ -103,7 +103,7 @@ module.exports = {
     }],
     'array-bracket-newline': ['error', 'consistent'],
     'array-element-newline': ['error', 'consistent'],
-    'capitalized-comments': 'warn',
+    'capitalized-comments': 'off',
     'comma-dangle': ['error', 'never'],
     'func-call-spacing': ['error', 'never'],
     'func-name-matching': ['error', 'always', {
@@ -113,9 +113,7 @@ module.exports = {
     'id-match': 'off',
     'implicit-arrow-linebreak': 'off',
     'jsx-quotes': ['error', 'prefer-double'],
-    'line-comment-position': ['error', {
-      'position': 'beside'
-    }],
+    'line-comment-position': 'off',
     'linebreak-style': ['error', 'unix'],
     'lines-around-comment': 'off',
     'lines-between-class-members': ['error', 'never'],
@@ -157,7 +155,7 @@ module.exports = {
       'initialized': 'never',
       'uninitialized': 'consecutive'
     }],
-    'one-var-declaration-per-line': 'initializations',
+    'one-var-declaration-per-line': ['error', 'initializations'],
     'operator-assignment': 'off',
     'operator-linebreak': 'off',
     'padded-blocks': ['warn', 'never'],

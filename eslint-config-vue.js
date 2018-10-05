@@ -59,8 +59,8 @@ module.exports = {
     'import/extensions': ['error', 'always', {
       'ignorePackages': true,
       'pattern': {
-        '.js': 'never',
-        '.vue': 'never'
+        'js': 'never',
+        'vue': 'never'
       }
     }],
     // disallow reassignment of function parameters
