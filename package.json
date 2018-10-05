@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "0.0.38",
+  "version": "0.0.40",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.6.1"
+    "eslint": "^5.6.1",
+    "eslint-config-minxing": "file:./"
   },
   "dependencies": {
     "eslint-config-import": "^0.13.0",
@@ -26,7 +27,6 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-minxing": "0.0.4",
     "eslint-plugin-vue": "^4.7.1",
-    "vue-eslint-parser": "^3.2.2",
-    "eslint-config-minxing": "file:./"
+    "vue-eslint-parser": "^3.2.2"
   }
 }
