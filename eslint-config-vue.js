@@ -20,9 +20,17 @@ module.exports = {
     require: false
   },
   extends: [
+    'eslint:recommended',
     'plugin:vue/strongly-recommended',
     'plugin:import/errors',
-    'plugin:import/warnings'
+    'plugin:import/warnings',
+    'minxing/eslint-config-bestpractice.js',
+    'minxing/eslint-config-errors.js',
+    'minxing/eslint-config-es6.js',
+    'minxing/eslint-config-node.js',
+    'minxing/eslint-config-possibleerrors.js',
+    'minxing/eslint-config-stylistic.js',
+    'minxing/eslint-config-var.js'
   ],
   env: {
     browser: true,

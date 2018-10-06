@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "0.0.40",
+  "version": "1.0.0",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
@@ -15,11 +15,11 @@
     "eslint": "^5.6.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
     "eslint": "^5.6.1",
     "eslint-config-minxing": "file:./"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint-config-import": "^0.13.0",
     "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-flowtype": "^2.50.3",
