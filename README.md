@@ -14,6 +14,8 @@
 
 > 针对`webpack`可编程配置的`node`程序。
 
+#### nodejs 7.x
+
 ```javascript
 module.exports = {
   ...
@@ -24,7 +26,7 @@ module.exports = {
 };
 ```
 
-或
+#### nodejs 8.x 或更高
 
 ```javascript
 module.exports = {
