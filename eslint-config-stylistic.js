@@ -132,7 +132,7 @@ module.exports = {
     'max-statements-per-line': ['warn', {
       max: 1
     }],
-    'multiline-comment-style': ['warn', 'starred-block'],
+    'multiline-comment-style': ['warn', 'bare-block'],
     'multiline-ternary': ['warn', 'always-multiline'],
     'newline-per-chained-call': 'off',
     'no-bitwise': 'off',

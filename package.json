@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
@@ -15,8 +15,10 @@
     "eslint": "^5.6.1"
   },
   "devDependencies": {
+    "doctrine": "^2.1.0",
     "eslint": "^5.6.1",
-    "eslint-config-minxing": "file:./"
+    "eslint-config-minxing": "file:./",
+    "to-fast-properties": "^2.0.0"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
