@@ -24,6 +24,7 @@ module.exports = {
     'plugin:vue/strongly-recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:compat/recommended',
     'minxing/eslint-config-bestpractice.js',
     'minxing/eslint-config-errors.js',
     'minxing/eslint-config-es6.js',
