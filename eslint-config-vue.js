@@ -50,9 +50,14 @@ module.exports = {
       webpack: {
         config: 'build/webpack.dev.conf.js'
       }
-    }
+    },
+    'polyfills': [ // 添加 polyfill，请参考 https://github.com/amilajack/eslint-plugin-compat/wiki/Adding-polyfills
+      'promises'
+    ]
   },
   rules: {
+    'compat/compat': 'warn',
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     'vue/html-indent': ['error', lineIndent],
     'vue/max-attributes-per-line': ['error', {
       singleline: 10,
@@ -72,9 +77,9 @@ module.exports = {
       }
     }],
     /*
-     * disallow reassignment of function parameters
-     * disallow parameter object manipulation except for specific exclusions
-     * allow optionalDependencies
+       disallow reassignment of function parameters
+       disallow parameter object manipulation except for specific exclusions
+       allow optionalDependencies
      */
     'import/no-extraneous-dependencies': ['error', {
       optionalDependencies: ['test/unit/index.js']
