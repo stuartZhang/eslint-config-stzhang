@@ -59,6 +59,7 @@ module.exports = {
   rules: {
     'compat/compat': 'warn',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    'vue/html-closing-bracket-newline': 'off',
     'vue/html-indent': ['error', lineIndent],
     'vue/max-attributes-per-line': ['error', {
       singleline: 10,
@@ -69,6 +70,7 @@ module.exports = {
     }],
     'vue/mustache-interpolation-spacing': ['error', 'never'],
     'vue/name-property-casing': ['error', 'PascalCase'],
+    'vue/singleline-html-element-content-newline': 'off',
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       ignorePackages: true,
