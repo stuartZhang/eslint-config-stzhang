@@ -4,9 +4,8 @@ const co = require('co');
 const pkg = require('./package.json');
 
 const parentDir = path.join(__dirname, '..');
-const parentDirName = path.basename(parentDir);
 
-if (parentDirName === 'node_modules') {
+if (path.basename(parentDir) === 'node_modules') {
   Object.keys(pkg.dependencies).filter(name => /^eslint-plugin-/.test(name)).forEach(co.wrap(function *(name, i){
     const src = path.join(__dirname, 'node_modules', name);
     if (yield fs.pathExists(src)) {
