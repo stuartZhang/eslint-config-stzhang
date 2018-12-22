@@ -1,9 +1,12 @@
 {
   "name": "eslint-config-minxing",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "node ./post-install.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stuartZhang/eslint-config-minxing.git"
@@ -21,6 +24,7 @@
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
+    "co": "^4.6.0",
     "eslint-config-import": "^0.13.0",
     "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-compat": "^2.6.3",
@@ -29,6 +33,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-minxing": "0.0.5",
     "eslint-plugin-vue": "^5.0.0",
+    "fs-extra": "^7.0.1",
     "vue-eslint-parser": "^4.0.3"
   }
 }
