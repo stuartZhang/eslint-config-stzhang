@@ -1,13 +1,9 @@
 module.exports = {
   lineIndent: 4,
   noConsole: {
-    prod: ['warn', {
-      allow: ['assert', 'error', 'time', 'timeEnd']
-    }],
-    dev: ['off'],
-    get value(){
-      return process.env.NODE_ENV === 'production' ? this.prod : this.dev;
-    }
+    value: ['warn', {
+      allow: ['assert', 'dir', 'dirxml', 'profile', 'profileEnd']
+    }]
   },
   noDebugger: {
     prod: ['error'],
