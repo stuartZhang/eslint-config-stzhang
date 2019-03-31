@@ -40,7 +40,7 @@ module.exports = {
 
 ### `src`目录下的`.eslintrc.js`配置
 
-> 重点针对`*.vue`程序。
+#### `javascript` 与 `vue` 规则集
 
 ```javascript
 module.exports = {
@@ -48,6 +48,19 @@ module.exports = {
   'root': true,
   'extends': [
     'minxing/eslint-config-vue.js'
+  ],
+  ...
+};
+```
+
+#### `typescript` 与 `vue` 规则集
+
+```javascript
+module.exports = {
+  ...
+  'root': true,
+  'extends': [
+    'minxing/eslint-config-vue-ts.js'
   ],
   ...
 };
