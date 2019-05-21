@@ -99,7 +99,7 @@ module.exports = {
     }],
     'spaced-comment': ['error', 'always', {
       exceptions: ['!', '*'],
-      markers: ['TODO:', 'FIXME', 'XXX']
+      markers: ['TODO:', 'FIXME', 'XXX', '/']
     }],
     'array-bracket-newline': ['error', 'consistent'],
     'array-element-newline': ['error', 'consistent'],
