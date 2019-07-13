@@ -52,8 +52,11 @@ module.exports = {
         config: 'build/webpack.dev.conf.js'
       }
     },
-    'polyfills': [ // 添加 polyfill，请参考 https://github.com/amilajack/eslint-plugin-compat/wiki/Adding-polyfills
-      'promises'
+    'polyfills': [ // 添加 polyfill，请参考 https://github.com/amilajack/eslint-plugin-compat#adding-polyfills
+      'Promise',
+      'FormData',
+      'Object.entries',
+      'Object.assign'
     ]
   },
   rules: {
