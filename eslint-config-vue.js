@@ -44,6 +44,7 @@ module.exports = {
     'import/resolver': {
       node: {
         extensions: [
+          '.macros.js',
           '.js',
           '.vue'
         ]
@@ -61,6 +62,7 @@ module.exports = {
   },
   rules: {
     'compat/compat': 'warn',
+    'no-param-reassign': 'off',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     'vue/html-closing-bracket-newline': 'off',
     'vue/html-indent': ['error', lineIndent],
