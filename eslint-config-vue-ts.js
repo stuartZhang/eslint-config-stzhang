@@ -15,3 +15,10 @@ module.exports = _.extendOwn(vueLinterConf, {
   },
   parser: 'vue-eslint-parser-stzhang',
 });
+module.exports.rules['import/extensions'] = ['error', 'always', {
+  ignorePackages: true,
+  pattern: {
+    ts: 'never',
+    js: 'never'
+  }
+}];
