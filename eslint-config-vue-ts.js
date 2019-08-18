@@ -12,5 +12,6 @@ module.exports = _.extendOwn(vueLinterConf, {
     ecmaFeatures: {
       jsx: true
     }
-  }
+  },
+  parser: 'vue-eslint-parser-stzhang',
 });
