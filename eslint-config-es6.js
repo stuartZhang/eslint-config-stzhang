@@ -39,7 +39,11 @@ module.exports = {
       destructuring: 'all'
     }],
     // flag usage of any older method, suggesting to instead use the newer Reflect version.
-    'prefer-reflect': ['error'],
+    'prefer-reflect': ['error', {
+      'exceptions': [
+        'getOwnPropertyNames'
+      ]
+    }],
     // flag usage of arguments variables.
     'prefer-rest-params': ['error'],
     // flag usage of Function.prototype.apply() that can be replaced with the spread operator.
