@@ -8,7 +8,7 @@ module.exports = {
     'flowtype'
   ],
   settings: {
-    flowtype: { // flow.js 规则仅应用于 // @flow 文件。
+    flowtype: {// flow.js 规则仅应用于 // @flow 文件。
       onlyFilesWithFlowAnnotation: true
     }
   },

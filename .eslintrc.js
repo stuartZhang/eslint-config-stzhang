@@ -5,6 +5,7 @@ module.exports = {
     'minxing/eslint-config-node7x.js'
   ],
   'rules': {
+    'no-console': 'off',
     'indent': ['error', 2, {
       'SwitchCase': 0,
       'VariableDeclarator': {

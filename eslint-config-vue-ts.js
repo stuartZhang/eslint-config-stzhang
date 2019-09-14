@@ -13,7 +13,7 @@ module.exports = _.extendOwn(vueLinterConf, {
       jsx: true
     }
   },
-  parser: 'vue-eslint-parser-stzhang',
+  parser: 'vue-eslint-parser-stzhang'
 });
 module.exports.rules['import/extensions'] = ['error', 'always', {
   ignorePackages: true,

@@ -16,17 +16,13 @@ module.exports = {
     'no-confusing-arrow': ['error', {
       allowParens: false
     }],
-    /*
-     * 'no-const-assign': ['error'],
-     * 'no-dupe-class-members': ['error'],
-     * 'no-new-symbol': ['error'],
-     * specify imports that you don’t want to use in your application.
-     */
+    /* 'no-const-assign': ['error'],
+       'no-dupe-class-members': ['error'],
+       'no-new-symbol': ['error'],
+       specify imports that you don’t want to use in your application. */
     'no-restricted-imports': 'off',
-    /*
-     * 'no-this-before-super': ['error'],
-     * flags class constructors that can be safely removed without changing how the class works.
-     */
+    /* 'no-this-before-super': ['error'],
+       flags class constructors that can be safely removed without changing how the class works. */
     'no-useless-constructor': ['error'],
     // discouraging the use of var and encouraging the use of const or let instead. ecmaFeatures.blockBindings = true
     'no-var': ['error'],
@@ -40,7 +36,7 @@ module.exports = {
     }],
     // flag usage of any older method, suggesting to instead use the newer Reflect version.
     'prefer-reflect': ['error', {
-      'exceptions': [
+      exceptions: [
         'getOwnPropertyNames'
       ]
     }],
