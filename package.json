@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "1.1.18",
+  "version": "1.1.19",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
@@ -19,17 +19,17 @@
   },
   "devDependencies": {
     "doctrine": "^3.0.0",
-    "eslint": "^6.3.0",
+    "eslint": "^6.5.1",
     "to-fast-properties": "^2.0.0"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^1.12.0",
+    "@typescript-eslint/parser": "^2.3.2",
     "babel-eslint": "^10.0.3",
     "co": "^4.6.0",
     "eslint-config-import": "^0.13.0",
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-plugin-compat": "^3.2.0",
-    "eslint-plugin-flowtype": "^3.11.1",
+    "eslint-plugin-flowtype": "^4.3.0",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-minxing": "0.0.5",

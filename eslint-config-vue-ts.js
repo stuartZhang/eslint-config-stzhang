@@ -5,6 +5,7 @@ module.exports = _.extendOwn(vueLinterConf, {
   parserOptions: {
     parser: '@typescript-eslint/parser',
     warnOnUnsupportedTypeScriptVersion: false,
+    createDefaultProgram: true,
     extraFileExtensions: ['.vue'],
     project: './tsconfig.json',
     tsconfigRootDir: './',
