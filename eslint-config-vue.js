@@ -1,5 +1,26 @@
 'use strict';
 const {lineIndent} = require('./utils');
+const utils = require('eslint-plugin-vue/lib/utils');
+/**
+ * Finds directive in the given start tag
+ * @param {ASTNode} node The start tag node to check.
+ * @param {string} name The directive name to check.
+ * @param {string} [argument] The directive argument to check.
+ * @returns {ASTNode} directive node
+ */
+utils.findDirective = function(node, name, argument){
+  return node.startTag.attributes.find(a => {
+    const getName = obj => {
+      if (typeof obj === 'string') {
+        return obj;
+      }
+      return obj.name;
+    };
+    return a.directive &&
+           getName(a.key.name) === name &&
+           (argument === undefined || getName(a.key.argument) === argument);
+  });
+};
 // Variables
 module.exports = {
   parserOptions: {
