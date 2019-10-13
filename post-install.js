@@ -1,4 +1,3 @@
-const fs = require('fs-extra');
 const path = require('path');
 const co = require('co');
 const pkg = require('./package.json');
@@ -6,6 +5,7 @@ const pkg = require('./package.json');
 const parentDir = path.join(__dirname, '..');
 
 if (path.basename(parentDir) === 'node_modules') {
+  const fs = require('fs-extra');
   [
     ...Object.keys(pkg.dependencies).filter(name => /^eslint-plugin-/.test(name)),
     '@typescript-eslint'
