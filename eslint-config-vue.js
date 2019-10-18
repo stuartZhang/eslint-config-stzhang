@@ -46,6 +46,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:compat/recommended',
+    'plugin:vue/base',
     'minxing/eslint-config-bestpractice.js',
     'minxing/eslint-config-errors.js',
     'minxing/eslint-config-es6.js',
