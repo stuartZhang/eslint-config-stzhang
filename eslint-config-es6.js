@@ -5,7 +5,7 @@ module.exports = {
   plugins: ['minxing'],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
-    'arrow-parens': ['off'],
+    'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': ['error', {
       before: true,
       after: true
@@ -56,7 +56,7 @@ module.exports = {
     'minxing/no-array-concat': ['error'],
     'minxing/no-string-charcode': ['error'],
     'minxing/no-util-format': ['error'],
-    'minxing/arrow-parens': ['error', 'as-needed'],
+    'minxing/arrow-parens': ['off'],
     'minxing/generator-star-spacing': ['error', 'before'],
     'minxing/require-yield': ['error'],
     'minxing/no-console': noConsole.value,
