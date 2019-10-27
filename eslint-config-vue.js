@@ -76,6 +76,7 @@ module.exports = {
       }
     },
     'polyfills': [ // 添加 polyfill，请参考 https://github.com/amilajack/eslint-plugin-compat#adding-polyfills
+      'Reflect',
       'Promise',
       'FormData',
       'Object.entries',
