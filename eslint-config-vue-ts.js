@@ -34,13 +34,21 @@ module.exports = _.extendOwn(vueLinterConf, {
 });
 module.exports.plugins.push('@typescript-eslint');
 module.exports.extends.push('plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking');
-module.exports.rules['import/extensions'] = ['error', 'always', {
-  ignorePackages: true,
-  pattern: {
-    ts: 'never',
-    js: 'never'
-  }
-}];
+_.extendOwn(module.exports.rules, {
+  'import/extensions': ['error', 'always', {
+    ignorePackages: true,
+    pattern: {
+      ts: 'never',
+      js: 'never'
+    }
+  }],
+  '@typescript-eslint/camelcase': ['error', {
+    properties: 'always',
+    genericType: 'always',
+    ignoreDestructuring: false,
+    allow: ['left_1', 'left_2', 'right_1', 'right_2']
+  }]
+});
 module.exports.settings['import/resolver'].node.extensions = [
   '.vue',
   '.macros.ts',
