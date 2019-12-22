@@ -35,9 +35,10 @@ module.exports = _.extendOwn(vueLinterConf, {
 module.exports.plugins.push('@typescript-eslint');
 module.exports.extends.push('plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking');
 _.extendOwn(module.exports.rules, {
-  'import/extensions': ['error', 'ignorePackages', {
+  'import/extensions': ['error', 'always', {
     ts: 'never',
-    js: 'never'
+    js: 'never',
+    vue: 'ignorePackages'
   }],
   '@typescript-eslint/camelcase': ['error', {
     properties: 'always',
