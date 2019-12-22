@@ -8,7 +8,7 @@ module.exports = _.extendOwn(vueLinterConf, {
     extraFileExtensions: ['.vue'],
     project: './tsconfig.json',
     tsconfigRootDir: './',
-    noWatch: false,
+    // noWatch: false,
     callback(script, options){
       const langAttr = script.startTag.attributes.find(a => typeof a.key === 'object' &&
           a.key.type === 'VIdentifier' && a.key.name === 'lang');
