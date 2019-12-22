@@ -100,12 +100,9 @@ module.exports = {
     'vue/name-property-casing': ['error', 'PascalCase'],
     'vue/singleline-html-element-content-newline': 'off',
     // don't require .vue extension when importing
-    'import/extensions': ['error', 'always', {
-      ignorePackages: true,
-      pattern: {
-        js: 'never',
-        vue: 'never'
-      }
+    'import/extensions': ['error', 'ignorePackages', {
+      js: 'never',
+      vue: 'never'
     }],
     /*
        disallow reassignment of function parameters
