@@ -9,7 +9,11 @@ module.exports = {
       allowSingleLine: false
     }],
     'camelcase': ['error', {
-      properties: 'never'
+      properties: 'always',
+      // genericType: 'always',
+      ignoreDestructuring: false,
+      ignoreImports: false,
+      allow: ['left_1', 'left_2', 'right_1', 'right_2']
     }],
     'comma-spacing': ['error', {
       before: false,

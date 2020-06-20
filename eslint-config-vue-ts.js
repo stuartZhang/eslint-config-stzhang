@@ -42,12 +42,6 @@ _.extendOwn(module.exports.rules, {
     ts: 'never',
     js: 'never',
     vue: 'ignorePackages'
-  }],
-  '@typescript-eslint/camelcase': ['error', {
-    properties: 'always',
-    genericType: 'always',
-    ignoreDestructuring: false,
-    allow: ['left_1', 'left_2', 'right_1', 'right_2']
   }]
 });
 module.exports.settings['import/resolver'].node.extensions = [
