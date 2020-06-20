@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "1.1.44",
+  "version": "1.1.45",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
@@ -15,29 +15,29 @@
     "node": ">=6.0"
   },
   "peerDependencies": {
-    "eslint": "^6.0.1"
+    "eslint": "^7.3.0"
   },
   "devDependencies": {
     "doctrine": "^3.0.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.3.0",
     "to-fast-properties": "^3.0.1"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.30.0",
-    "@typescript-eslint/parser": "^2.30.0",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
     "babel-eslint": "^10.1.0",
     "co": "^4.6.0",
     "eslint-config-import": "^0.13.0",
-    "eslint-import-resolver-webpack": "^0.12.1",
-    "eslint-plugin-compat": "^3.5.1",
-    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-import-resolver-webpack": "^0.12.2",
+    "eslint-plugin-compat": "^3.7.0",
+    "eslint-plugin-flowtype": "^5.1.3",
     "eslint-plugin-html": "^6.0.2",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-minxing": "0.0.5",
     "eslint-plugin-vue": "^6.2.2",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.1",
     "underscore": "^1.10.2",
-    "vue-eslint-parser": "^7.0.0",
+    "vue-eslint-parser": "^7.1.0",
     "vue-eslint-parser-stzhang": "^2.0.0"
   }
 }
