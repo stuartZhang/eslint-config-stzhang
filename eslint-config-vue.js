@@ -38,7 +38,8 @@ module.exports = {
   parser: 'vue-eslint-parser',
   globals: {
     process: false,
-    require: false
+    require: false,
+    module: false
   },
   extends: [
     'eslint:recommended',

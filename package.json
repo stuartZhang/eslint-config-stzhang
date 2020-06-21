@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
@@ -38,6 +38,6 @@
     "fs-extra": "^9.0.1",
     "underscore": "^1.10.2",
     "vue-eslint-parser": "^7.1.0",
-    "vue-eslint-parser-stzhang": "^2.0.0"
+    "vue-eslint-parser-stzhang": "^2.0.1"
   }
 }

@@ -10,23 +10,27 @@ module.exports = _.extendOwn(vueLinterConf, {
     tsconfigRootDir: './',
     // noWatch: false,
     callback(script, options){
-      const langAttr = script.startTag.attributes.find(a => typeof a.key === 'object' &&
-          a.key.type === 'VIdentifier' && a.key.name === 'lang');
-      if (langAttr && typeof langAttr.value === 'object' &&
-          langAttr.value.type === 'VLiteral' && langAttr.value.value === 'tsx') {
-        options.createDefaultProgram = options.useJSXTextNode = true;
-        if (options.ecmaFeatures == null) {
-          options.ecmaFeatures = {};
+      if (script) {
+        const langAttr = script.startTag.attributes.find(a => typeof a.key === 'object' &&
+            a.key.type === 'VIdentifier' && a.key.name === 'lang');
+        if (langAttr && typeof langAttr.value === 'object' &&
+            langAttr.value.type === 'VLiteral' && langAttr.value.value === 'tsx') {
+            options.createDefaultProgram = options.useJSXTextNode = true;
+            if (options.ecmaFeatures == null) {
+            options.ecmaFeatures = {};
+            }
+            if (!options.ecmaFeatures.jsx) {
+            options.ecmaFeatures.jsx = true;
+            }
+            options.filePath += `.${langAttr.value.value}`;
+        } else {
+            options.createDefaultProgram = options.useJSXTextNode = undefined;
+            if (typeof options.ecmaFeatures === 'object' && options.ecmaFeatures.jsx) {
+            options.ecmaFeatures.jsx = undefined;
+            }
         }
-        if (!options.ecmaFeatures.jsx) {
-          options.ecmaFeatures.jsx = true;
-        }
-        options.filePath += `.${langAttr.value.value}`;
       } else {
-        options.createDefaultProgram = options.useJSXTextNode = undefined;
-        if (typeof options.ecmaFeatures === 'object' && options.ecmaFeatures.jsx) {
-          options.ecmaFeatures.jsx = undefined;
-        }
+        options.createDefaultProgram = /\.js$/.test(options.filePath) ? true : undefined;
       }
     }
   },
