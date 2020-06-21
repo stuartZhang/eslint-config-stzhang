@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-minxing",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "url": "https://github.com/stuartZhang/eslint-config-minxing.git"
   },
   "engines": {
-    "node": ">=6.0"
+    "node": ">=10.17.0"
   },
   "peerDependencies": {
     "eslint": "^7.3.0"

@@ -8,7 +8,7 @@
 
 ### `peers`依赖
 
-* eslint: 5.6+
+* eslint: 7.3.0+
 
 ### 项目根目录下的`.eslintrc.js`配置
 
