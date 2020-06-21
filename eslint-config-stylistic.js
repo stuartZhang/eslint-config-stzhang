@@ -13,7 +13,7 @@ module.exports = {
       // genericType: 'always',
       ignoreDestructuring: false,
       ignoreImports: false,
-      allow: ['left_1', 'left_2', 'right_1', 'right_2']
+      allow: ['left_1', 'left_2', 'right_1', 'right_2', 'pac_dir', 'mx_address', 'child_process', 'src_folders', 'output_folder', 'custom_assertions_path', 'start_process', 'server_path', 'cli_args', 'test_settings', 'selenium_port', 'selenium_host']
     }],
     'comma-spacing': ['error', {
       before: false,

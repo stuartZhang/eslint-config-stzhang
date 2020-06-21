@@ -41,12 +41,19 @@ module.exports.extends.push('plugin:@typescript-eslint/eslint-recommended', 'plu
 _.extendOwn(module.exports.rules, {
   'require-atomic-updates': 'off',
   'minxing/arrow-parens': 'off',
-  '@typescript-eslint/no-this-alias': 'off',
   'import/extensions': ['error', {
     ts: 'never',
     js: 'never',
     vue: 'ignorePackages'
-  }]
+  }],
+  '@typescript-eslint/no-this-alias': 'off',
+  // 这几个规则：防止经由第三库 js api 把 any 类型变量引入开发者自己的业务代码里。
+  '@typescript-eslint/no-unsafe-call': 'off',
+  '@typescript-eslint/no-unsafe-return': 'off',
+  '@typescript-eslint/no-unsafe-assignment': 'off',
+  '@typescript-eslint/no-unsafe-member-access': 'off',
+  // 禁止字符串模板内出现表达式。
+  '@typescript-eslint/restrict-template-expressions': 'off'
 });
 module.exports.settings['import/resolver'].node.extensions = [
   '.vue',
