@@ -39,8 +39,9 @@ module.exports = _.extendOwn(vueLinterConf, {
 module.exports.plugins.push('@typescript-eslint');
 module.exports.extends.push('plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking');
 _.extendOwn(module.exports.rules, {
-  'require-atomic-updates': 'off',
+  'no-var-requires': 'off',
   'minxing/arrow-parens': 'off',
+  'require-atomic-updates': 'off',
   'import/extensions': ['error', {
     ts: 'never',
     js: 'never',
