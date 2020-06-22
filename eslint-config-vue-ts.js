@@ -39,7 +39,6 @@ module.exports = _.extendOwn(vueLinterConf, {
 module.exports.plugins.push('@typescript-eslint');
 module.exports.extends.push('plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking');
 _.extendOwn(module.exports.rules, {
-  'no-var-requires': 'off',
   'minxing/arrow-parens': 'off',
   'require-atomic-updates': 'off',
   'import/extensions': ['error', {
@@ -48,6 +47,7 @@ _.extendOwn(module.exports.rules, {
     vue: 'ignorePackages'
   }],
   '@typescript-eslint/no-this-alias': 'off',
+  '@typescript-eslint/no-var-requires': 'off',
   // 这几个规则：防止经由第三库 js api 把 any 类型变量引入开发者自己的业务代码里。
   '@typescript-eslint/no-unsafe-call': 'off',
   '@typescript-eslint/no-unsafe-return': 'off',
