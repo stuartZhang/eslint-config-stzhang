@@ -17,16 +17,16 @@ module.exports = _.extendOwn(vueLinterConf, {
             langAttr.value.type === 'VLiteral' && langAttr.value.value === 'tsx') {
             options.createDefaultProgram = options.useJSXTextNode = true;
             if (options.ecmaFeatures == null) {
-            options.ecmaFeatures = {};
+              options.ecmaFeatures = {};
             }
             if (!options.ecmaFeatures.jsx) {
-            options.ecmaFeatures.jsx = true;
+              options.ecmaFeatures.jsx = true;
             }
             options.filePath += `.${langAttr.value.value}`;
         } else {
             options.createDefaultProgram = options.useJSXTextNode = undefined;
             if (typeof options.ecmaFeatures === 'object' && options.ecmaFeatures.jsx) {
-            options.ecmaFeatures.jsx = undefined;
+              options.ecmaFeatures.jsx = undefined;
             }
         }
       } else {
