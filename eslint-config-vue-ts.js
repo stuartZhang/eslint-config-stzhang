@@ -3,11 +3,22 @@ const vueLinterConf = require('./eslint-config-vue');
 
 module.exports = _.extendOwn(vueLinterConf, {
   parserOptions: {
-    parser: '@typescript-eslint/parser',
-    warnOnUnsupportedTypeScriptVersion: false,
     extraFileExtensions: ['.vue'],
-    project: './tsconfig.json',
-    tsconfigRootDir: './',
+    sourceType: 'module',
+    tsconfigRootDir: '.',
+    project: 'tsconfig.json',
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 9,
+    ecmaFeatures: {
+      globalReturn: true,
+      impliedStrict: false,
+      jsx: false,
+      experimentalObjectRestSpread: false,
+      allowImportExportEverywhere: false
+    },
+    createDefaultProgram: true,
+    useJSXTextNode: false,
+    warnOnUnsupportedTypeScriptVersion: false,
     // noWatch: false,
     callback(script, options){
       if (script) {
@@ -15,22 +26,8 @@ module.exports = _.extendOwn(vueLinterConf, {
             a.key.type === 'VIdentifier' && a.key.name === 'lang');
         if (langAttr && typeof langAttr.value === 'object' &&
             langAttr.value.type === 'VLiteral' && langAttr.value.value === 'tsx') {
-            options.createDefaultProgram = options.useJSXTextNode = true;
-            if (options.ecmaFeatures == null) {
-              options.ecmaFeatures = {};
-            }
-            if (!options.ecmaFeatures.jsx) {
-              options.ecmaFeatures.jsx = true;
-            }
             options.filePath += `.${langAttr.value.value}`;
-        } else {
-            options.createDefaultProgram = options.useJSXTextNode = undefined;
-            if (typeof options.ecmaFeatures === 'object' && options.ecmaFeatures.jsx) {
-              options.ecmaFeatures.jsx = undefined;
-            }
         }
-      } else {
-        options.createDefaultProgram = /\.js$/.test(options.filePath) ? true : undefined;
       }
     }
   },
