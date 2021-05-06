@@ -36,7 +36,7 @@
     "eslint-plugin-minxing": "0.0.5",
     "eslint-plugin-vue": "^6.2.2",
     "fs-extra": "^8.1.0",
-    "underscore": "^1.10.2",
+    "underscore": "^1.12.1",
     "vue-eslint-parser": "^7.0.0",
     "vue-eslint-parser-stzhang": "^2.0.0"
   }
