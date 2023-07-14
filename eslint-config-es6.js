@@ -2,7 +2,7 @@
 // ECMAScript 6
 const {noConsole} = require('./utils');
 module.exports = {
-  plugins: ['minxing'],
+  plugins: ['stzhang2'],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'as-needed'],
@@ -53,13 +53,13 @@ module.exports = {
     // enforces spacing around the * in yield* expressions.
     'yield-star-spacing': ['error', 'after'],
     // Connect rules
-    'minxing/no-array-concat': ['error'],
-    'minxing/no-string-charcode': ['error'],
-    'minxing/no-util-format': ['error'],
-    'minxing/arrow-parens': ['off'],
-    'minxing/generator-star-spacing': ['error', 'before'],
-    'minxing/require-yield': ['error'],
-    'minxing/no-console': noConsole.value,
+    'stzhang2/no-array-concat': ['error'],
+    'stzhang2/no-string-charcode': ['error'],
+    'stzhang2/no-util-format': ['error'],
+    'stzhang2/arrow-parens': ['off'],
+    'stzhang2/generator-star-spacing': ['error', 'before'],
+    'stzhang2/require-yield': ['error'],
+    'stzhang2/no-console': noConsole.value,
     'no-duplicate-imports': ['error'],
     'no-useless-rename': ['error'],
     'no-useless-computed-key': 'error',

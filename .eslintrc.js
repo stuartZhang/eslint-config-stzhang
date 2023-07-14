@@ -2,7 +2,7 @@
 
 module.exports = {
   'extends': [
-    'minxing/eslint-config-node7x.js'
+    'stzhang2/eslint-config-node7x.js'
   ],
   'rules': {
     'no-console': 'off',

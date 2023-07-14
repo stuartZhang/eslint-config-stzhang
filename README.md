@@ -1,10 +1,10 @@
-# eslint-config-minxing
+# eslint-config-stzhang2
 
 【敏行H5程序】与【敏行node程序】`JavaScript`开发规则定制套装，支持`Vue`。
 
 ## 安装
 
-`npm i eslint-config-minxing -D`
+`npm i eslint-config-stzhang2 -D`
 
 ### `peers`依赖
 
@@ -20,7 +20,7 @@
 module.exports = {
   ...
   'extends': [
-    'minxing/eslint-config-node7x.js'
+    'stzhang2/eslint-config-node7x.js'
   ],
   ...
 };
@@ -32,7 +32,7 @@ module.exports = {
 module.exports = {
   ...
   'extends': [
-    'minxing/eslint-config-node8x.js'
+    'stzhang2/eslint-config-node8x.js'
   ],
   ...
 };
@@ -47,7 +47,7 @@ module.exports = {
   ...
   'root': true,
   'extends': [
-    'minxing/eslint-config-vue.js'
+    'stzhang2/eslint-config-vue.js'
   ],
   ...
 };
@@ -60,7 +60,7 @@ module.exports = {
   ...
   'root': true,
   'extends': [
-    'minxing/eslint-config-vue-ts.js'
+    'stzhang2/eslint-config-vue-ts.js'
   ],
   ...
 };

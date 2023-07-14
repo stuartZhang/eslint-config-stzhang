@@ -18,13 +18,13 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'minxing/eslint-config-bestpractice.js',
-    'minxing/eslint-config-errors.js',
-    'minxing/eslint-config-es6.js',
-    'minxing/eslint-config-node.js',
-    'minxing/eslint-config-possibleerrors.js',
-    'minxing/eslint-config-stylistic.js',
-    'minxing/eslint-config-var.js'
+    'stzhang2/eslint-config-bestpractice.js',
+    'stzhang2/eslint-config-errors.js',
+    'stzhang2/eslint-config-es6.js',
+    'stzhang2/eslint-config-node.js',
+    'stzhang2/eslint-config-possibleerrors.js',
+    'stzhang2/eslint-config-stylistic.js',
+    'stzhang2/eslint-config-var.js'
   ],
   rules: {
     'require-atomic-updates': 'off',

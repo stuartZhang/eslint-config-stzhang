@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-minxing",
+  "name": "eslint-config-stzhang2",
   "version": "1.1.46",
   "main": "eslint-config-bestpractice",
   "author": "stuart_zhang",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stuartZhang/eslint-config-minxing.git"
+    "url": "https://github.com/stuartZhang/eslint-config-stzhang2.git"
   },
   "engines": {
     "node": ">=6.0"
@@ -33,7 +33,7 @@
     "eslint-plugin-flowtype": "^4.7.0",
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-minxing": "0.0.5",
+    "eslint-plugin-stzhang2": "0.0.5",
     "eslint-plugin-vue": "^6.2.2",
     "fs-extra": "^8.1.0",
     "underscore": "^1.10.2",
